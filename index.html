@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search</title>
+
+    <script src="https://kit.fontawesome.com/5b83db98bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-search.css">
 </head>
+
 <body>
-    <form action="https://www.google.com/search">
-        <div>
+    <nav id="options">
+        <ul>
+            <li><a href="image.html">Images</a></li>
+            <li><a href="advance.html">Advances</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div id="logo">
+            <img src="google.png" alt="White Google Logo">
+        </div>
+        <form action="https://www.google.com/search">
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <input type="text" name="q">
-        </div>
-        <div>
-            <input type="submit" value="Google Search">
-            <input type="button" value="I'm Feeling Lucky" >
-        </div>
-    </form>
+            <div id="button">
+                <input type="submit" value="Google Search">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </main>
+
 </body>
+
 </html>
