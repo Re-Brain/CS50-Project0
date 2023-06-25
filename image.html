@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/5b83db98bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-images.css">
+
     <title>Google Image</title>
 </head>
+
 <body>
     <div id="options">
         <ul>
             <li><a href="index.html">index</a></li>
         </ul>
     </div>
-    <div id="logo">
-        <img src="google.png" alt="White Google Logo">
-    </div>
-    <form action="http://images.google.com/images">
-        <input type="text" name="q">
-        <br>
-        <div>
-            <input type="submit" value="Google Search">
+    
+    <main>
+        <div id="logo">
+            <img src="google.png" alt="White Google Logo">
         </div>
-    </form>
+        <form action="http://images.google.com/images">
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" name="q">
+            <br>
+            <input type="submit" value="Google Search">
+        </form>
+    </main>
+    
 
 
 </body>
+
 </html>

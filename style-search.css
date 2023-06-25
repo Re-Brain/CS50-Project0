@@ -158,6 +158,9 @@ body
 {
     margin: 30px 5px 10px;
     padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 
 #options ul li a
