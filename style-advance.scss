@@ -1,0 +1,272 @@
+$color: green;
+$colorSec: wheat;
+$colorThi: pink;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Code */
+body {
+    background-color: #202124;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#options {
+    height: 6vh;
+    width: 100vw;
+
+    ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            margin: 30px 5px 10px;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+            }
+
+            img {
+                width: 75px;
+
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+    h3 {
+        margin-left: 50px;
+        font-size: 20px;
+        color: #f28b82;
+    }
+}
+
+main {
+    width: 100vw;
+    height: 30vh;
+    border-bottom: 1px solid gray;
+
+    #container {
+        margin-left: 50px;
+        width: 65%;
+        height: 50%;
+        padding-top: 30px;
+        
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            color: #e8eaed;
+
+            :nth-child(2) {
+                margin-right: 190px;
+            }
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 250px 600px 350px;
+
+            .instruction {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    margin: 12px;
+                    color: #bdc1c6;
+                }
+            }
+
+            .input {
+                display: flex;
+                flex-direction: column;
+
+                input[type="text"] {
+                    width: 90%;
+                    height: 20%;
+                    margin: 5px;
+                    border-radius: 2px;
+                    border: 1px solid gray;
+                    background-color: #202124;
+                    font-size: 15px;
+                    color: white;
+                }
+            }
+
+            .description {
+                display: grid;
+                grid-template-columns: 500px;
+                font-size: 14px;
+
+                p {
+                    margin-top: 15px;
+                    color: #969ba1;
+
+                    i {
+                        color: #dadce0;
+                    }
+                }
+
+            }
+        }
+
+        input[type=submit] {
+            margin-top: 10px;
+            margin-left: 55.4%;
+            padding: 5px 10px;
+            background-color: #8ab4f8;
+            border: 1px solid #8ab4f8;
+            border-radius: 2px;
+        }
+
+
+    }
+}

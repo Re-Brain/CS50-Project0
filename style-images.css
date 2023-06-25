@@ -148,7 +148,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 #options ul li {
@@ -160,88 +160,45 @@ body {
   color: white;
   font-size: 15px;
 }
-#options ul li img {
-  width: 75px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-header {
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid gray;
-}
-header h3 {
-  margin-left: 50px;
-  font-size: 20px;
-  color: #f28b82;
-}
 
 main {
+  text-align: center;
   width: 100vw;
-  height: 30vh;
-  border-bottom: 1px solid gray;
-}
-main #container {
-  margin-left: 50px;
-  width: 65%;
-  height: 50%;
-  padding-top: 30px;
-}
-main #container .head {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  color: #e8eaed;
-}
-main #container .head :nth-child(2) {
-  margin-right: 190px;
-}
-main #container .content {
-  display: grid;
-  grid-template-columns: 250px 600px 350px;
-}
-main #container .content .instruction {
+  height: 68vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-main #container .content .instruction p {
-  margin: 12px;
-  color: #bdc1c6;
-}
-main #container .content .input {
-  display: flex;
-  flex-direction: column;
-}
-main #container .content .input input[type=text] {
-  width: 90%;
+main form {
+  width: 70%;
   height: 20%;
-  margin: 5px;
-  border-radius: 2px;
+  margin-top: 20px;
+}
+main form input[type=text] {
+  width: 42.5%;
+  height: 34%;
+  border-radius: 25px;
   border: 1px solid gray;
   background-color: #202124;
-  font-size: 15px;
+  font-size: 18px;
+  text-indent: 45px;
   color: white;
 }
-main #container .content .description {
-  display: grid;
-  grid-template-columns: 500px;
-  font-size: 14px;
+main form .icon {
+  position: relative;
 }
-main #container .content .description p {
-  margin-top: 15px;
-  color: #969ba1;
+main form .icon i {
+  position: absolute;
+  right: 69%;
+  top: 15px;
+  color: gray;
 }
-main #container .content .description p i {
-  color: #dadce0;
-}
-main #container input[type=submit] {
-  margin-top: 10px;
-  margin-left: 55.4%;
-  padding: 5px 10px;
-  background-color: #8ab4f8;
-  border: 1px solid #8ab4f8;
-  border-radius: 2px;
-}/*# sourceMappingURL=style-advance.css.map */
+main input[type=submit] {
+  margin: 26px 2px 0px;
+  padding: 10px 15px 10px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #303134;
+  color: #e8eaed;
+}/*# sourceMappingURL=style-images.css.map */
