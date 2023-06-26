@@ -1,6 +1,3 @@
-$color: green;
-$colorSec: wheat;
-$colorThi: pink;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -193,80 +190,86 @@ main {
     height: 30vh;
     border-bottom: 1px solid gray;
 
-    #container {
-        margin-left: 50px;
-        width: 65%;
-        height: 50%;
-        padding-top: 30px;
-        
+    form {
+        height: 80%;
 
-        .head {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            color: #e8eaed;
-
-            :nth-child(2) {
-                margin-right: 190px;
-            }
-        }
-
-        .content {
+        #container {
+            margin-left: 50px;
+            width: 65%;
+            height: 95%;
+            padding-top: 30px;
             display: grid;
-            grid-template-columns: 250px 600px 350px;
+            grid-template-columns: 60% 40%;
 
-            .instruction {
+            #search {
                 display: flex;
                 flex-direction: column;
 
-                p {
-                    margin: 12px;
-                    color: #bdc1c6;
+                .head {
+                    font-size: 19px;
+                    color: #e8eaed;
                 }
-            }
 
-            .input {
-                display: flex;
-                flex-direction: column;
-
-                input[type="text"] {
-                    width: 90%;
-                    height: 20%;
-                    margin: 5px;
-                    border-radius: 2px;
-                    border: 1px solid gray;
-                    background-color: #202124;
-                    font-size: 15px;
-                    color: white;
-                }
-            }
-
-            .description {
-                display: grid;
-                grid-template-columns: 500px;
-                font-size: 14px;
-
-                p {
+                .input {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
                     margin-top: 15px;
-                    color: #969ba1;
 
+                    input[type="text"] {
+                        width: 70%;
+                        margin-right: 15px;
+                        height: 25px;
+                        background-color: #202124;
+                        border: 1px solid #5f6368;
+                    }
+
+                    p {
+                        color: #bdc1c6;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            #instruction {
+                display: flex;
+                flex-direction: column;
+
+                .head {
+                    font-size: 19px;
+                    color: #e8eaed;
+                    margin-bottom: 15px;
+                }
+
+                .description {
+                    font-size: 13px;
+                    display: flex;
+                    text-align: center;
+                    color: #969ba1;
+                    align-items: center;
+                    height: 13%;
+                    margin-bottom: 16px;
+                    margin-left: 10px;
+                
                     i {
                         color: #dadce0;
                     }
                 }
-
             }
         }
 
         input[type=submit] {
-            margin-top: 10px;
-            margin-left: 55.4%;
+            margin-top: 0px;
+            margin-left: 34.2%;
             padding: 5px 10px;
             background-color: #8ab4f8;
             border: 1px solid #8ab4f8;
             border-radius: 2px;
         }
 
-
+        input[type=submit]:hover {
+            border: 1px solid #3079ed;
+        }
     }
 }

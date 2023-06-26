@@ -22,39 +22,63 @@
         <h3>Advanced Search</h3>
     </header>
     <main>
-        <div id="container">
-            <form action="https://www.google.com/search">
-
-                <div class="head">
-                    <h3>Find pages with...</h3>
-                    <h3>To do this in the search box.</h3>
-                </div>
-
-                <div class="content">
-                    <div class="instruction">
-                        <p>all these words:</p>
-                        <p>this exact word or phrase:</p>
-                        <p>any of these words:</p>
-                        <p>none of these words:</p>
+        <form action="https://www.google.com/search">
+            <div id="container">
+                <div id="search">
+                    <div class="head">
+                        <h3>Find pages with...</h3>
                     </div>
+
                     <div class="input">
+                        <p>all these words:</p>
                         <input type="text" name="as_q">
+                    </div>
+
+                    <div class="input">
+                        <p>this exact word or phrase:</p>
                         <input type="text" name="as_epq">
+                    </div>
+
+                    <div class="input">
+                        <p>any of these words:</p>
                         <input type="text" name="as_oq">
+                    </div>
+
+                    <div class="input">
+                        <p>none of these words:</p>
                         <input type="text" name="as_eq">
                     </div>
-                    <div class="description">
-                        <p>Type the important words: <i>tri-colour</i> <i>rat</i> <i>terrier</i></p>
-                        <p>Put exact words in quotes: <i>"rat terrier"</i></p>
-                        <p>Type <i>OR</i> between all the words you want: <i>miniature OR standard</i></p>
-                        <p>Put a minus sign just before words that you don't want: <i>-rodent,</i> <i>-"Jack Russell"</i></p>
-                    </div>
                 </div>
 
-                <input type="submit" value="Google Search">
+                <div id="instruction">
+                    <div class="head">
+                        <h3>To do this in the search box.</h3>
+                    </div>
 
-            </form>
-        </div>
+                    <div class="description">
+                        <p>Type the important words: <i>tri-colour</i> <i>rat</i> <i>terrier</i></p>
+                    </div>
+
+                    <div class="description">
+                        <p>Put exact words in quotes: <i>"rat terrier"</i></p>
+                    </div>
+
+                    <div class="description">
+                        <p>Type <i>OR</i> between all the words you want: <i>miniature OR standard</i></p>
+                    </div>
+
+                    <div class="description">
+                        <p>Put a minus sign just before words that you don't want: <i>-rodent,</i> <i>-"Jack
+                                Russell"</i></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <input type="submit" value="Advanced Search">
+
+        </form>
+
     </main>
 </body>
 

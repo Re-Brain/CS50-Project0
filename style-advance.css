@@ -184,64 +184,73 @@ main {
   height: 30vh;
   border-bottom: 1px solid gray;
 }
-main #container {
+main form {
+  height: 80%;
+}
+main form #container {
   margin-left: 50px;
   width: 65%;
-  height: 50%;
+  height: 95%;
   padding-top: 30px;
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
-main #container .head {
+main form #container #search {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  flex-direction: column;
+}
+main form #container #search .head {
+  font-size: 19px;
   color: #e8eaed;
 }
-main #container .head :nth-child(2) {
-  margin-right: 190px;
-}
-main #container .content {
-  display: grid;
-  grid-template-columns: 250px 600px 350px;
-}
-main #container .content .instruction {
+main form #container #search .input {
   display: flex;
-  flex-direction: column;
-}
-main #container .content .instruction p {
-  margin: 12px;
-  color: #bdc1c6;
-}
-main #container .content .input {
-  display: flex;
-  flex-direction: column;
-}
-main #container .content .input input[type=text] {
-  width: 90%;
-  height: 20%;
-  margin: 5px;
-  border-radius: 2px;
-  border: 1px solid gray;
-  background-color: #202124;
-  font-size: 15px;
-  color: white;
-}
-main #container .content .description {
-  display: grid;
-  grid-template-columns: 500px;
-  font-size: 14px;
-}
-main #container .content .description p {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   margin-top: 15px;
-  color: #969ba1;
 }
-main #container .content .description p i {
+main form #container #search .input input[type=text] {
+  width: 70%;
+  margin-right: 15px;
+  height: 25px;
+  background-color: #202124;
+  border: 1px solid #5f6368;
+}
+main form #container #search .input p {
+  color: #bdc1c6;
+  font-size: 15px;
+}
+main form #container #instruction {
+  display: flex;
+  flex-direction: column;
+}
+main form #container #instruction .head {
+  font-size: 19px;
+  color: #e8eaed;
+  margin-bottom: 15px;
+}
+main form #container #instruction .description {
+  font-size: 13px;
+  display: flex;
+  text-align: center;
+  color: #969ba1;
+  align-items: center;
+  height: 13%;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+main form #container #instruction .description i {
   color: #dadce0;
 }
-main #container input[type=submit] {
-  margin-top: 10px;
-  margin-left: 55.4%;
+main form input[type=submit] {
+  margin-top: 0px;
+  margin-left: 34.2%;
   padding: 5px 10px;
   background-color: #8ab4f8;
   border: 1px solid #8ab4f8;
   border-radius: 2px;
+}
+main form input[type=submit]:hover {
+  border: 1px solid #3079ed;
 }/*# sourceMappingURL=style-advance.css.map */
