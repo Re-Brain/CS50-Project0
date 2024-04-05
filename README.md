@@ -1,6 +1,6 @@
 # Project 0 - Search
 
-This is my first project in my CS50’s Web Programming with Python and JavaScript course that I taken. In this project, I have to replicate the functinallity of google search, google image search, and google search advance using only html and css
+&nbsp;&nbsp;&nbsp;&nbsp;This is my first project in my CS50’s Web Programming with Python and JavaScript course that I taken. In this project, I have to replicate the functinallity of google search, google image search, and google search advance using only html and css
 
 ## Specification
 
